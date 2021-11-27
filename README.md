@@ -408,7 +408,7 @@ address 10.27.0.2
 netmask 255.255.252.0
 gateway 10.27.0.1
 ```
-Agar node dapat mengakses internet, pada Foosha diketikkan perintah `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 10.27.0.0/16`.
+Agar node dapat mengakses internet, pada Foosha diketikkan perintah `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 10.27.0.0/16`. Pada node selain Foosha, menjalankan perintah `echo nameserver 192.168.122.1 > /etc/resolv.conf`.
 
 Menambahkan route yang disimpan dalam sebuah file bash, misal kita simpan dengan nama route.sh, berarti ketikkan perintah `vi route.sh` dan menambahkan route berikut untuk masing-masing router:
 
