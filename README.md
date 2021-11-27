@@ -9,7 +9,7 @@ Laporan Resmi Praktikum Jaringan Komputer 2021 - D12
 ### PENERAPAN VLSM PADA CISCO PACKET TRACER
 Kelompok kami menggunakan teknik VLSM (Variable Length Subnet Masking) pada CPT dengan langkah-langkah sebagai berikut:
 
-**Langkah 1** - Melakukan pembagian subnet berdasarkan topologi yang terdapat pada soal. Untuk server Doriki dan Fukurou kami ikutkan dalam pembagian subnet IP.
+**Langkah 1** - Melakukan pembagian subnet berdasarkan topologi yang terdapat pada soal.
 
 ![](./images/P1.jpg)
 
