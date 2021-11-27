@@ -8,11 +8,13 @@ Laporan Resmi Praktikum Jaringan Komputer 2021 - D12
 
 ### PENERAPAN VLSM PADA CISCO PACKET TRACER
 Kelompok kami menggunakan teknik VLSM (Variable Length Subnet Masking) pada CPT dengan langkah-langkah sebagai berikut:
+
 **Langkah 1** - Melakukan pembagian subnet berdasarkan topologi yang terdapat pada soal. Untuk server Doriki dan Fukurou kami ikutkan dalam pembagian subnet IP.
 
 ![](./images/P1.jpg)
 
 Dapat dilihat pada gambar terdapat 15 subnet dengan masing-masing submask.
+
 **Langkah 2** - Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan lakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
 
 | First Header  | Second Header | First Header  |
@@ -47,6 +49,8 @@ Kemudian jika NID dibagikan pada setiap subnet pada topologi, akan menjadi sebag
 Untuk routing pada CPT, diberikan static route pada semua router yang ada dengan route sebagai berikut untuk setiap router:
 
 ![](./images/vlsm6.jpg)
+
+Selanjutnya, hasil dari perhitungan subnet tersebut dapat diimplementasikan ke dalam CPT.
 
 ### PENERAPAN CIDR PADA GNS3
 Kelompok kami menggunakan teknik CIDR (Classless Inter Domain Routing) pada GNS3 dengan langkah-langkah sebagai berikut:
