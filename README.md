@@ -15,7 +15,6 @@ Kelompok kami menggunakan teknik VLSM (Variable Length Subnet Masking) pada CPT 
 Dapat dilihat pada gambar terdapat 15 subnet dengan masing-masing submask.
 **Langkah 2** - Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan lakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
 
-
 | First Header  | Second Header | First Header  |
 | ------------- | ------------- | ------------- |
 | A01           | 1001          | /22           |
@@ -33,6 +32,21 @@ Dapat dilihat pada gambar terdapat 15 subnet dengan masing-masing submask.
 | A13           | 252           | /24           |
 | Total         | 5841          | /19           |
 
+**Langkah 3** - Subnet besar yang dibentuk memiliki NID **10.27.0.0** dengan netmask /**19**. Menghitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon seperti gambar di bawah.
+
+![](./images/vlsm3.jpg)
+
+Dari pohon tersebut akan mendapat pembagian IP sebagai berikut:
+
+![](./images/vlsm4.jpg)
+
+Kemudian jika NID dibagikan pada setiap subnet pada topologi, akan menjadi sebagai berikut:
+
+![](./images/vlsm5.jpg)
+
+Untuk routing pada CPT, diberikan static route pada semua router yang ada dengan route sebagai berikut untuk setiap router:
+
+![](./images/vlsm6.jpg)
 
 ### PENERAPAN CIDR PADA GNS3
 Kelompok kami menggunakan teknik CIDR (Classless Inter Domain Routing) pada GNS3 dengan langkah-langkah sebagai berikut:
